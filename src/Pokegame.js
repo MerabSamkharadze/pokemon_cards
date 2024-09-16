@@ -23,10 +23,8 @@ function Pokegame() {
   let exp2 = hand2.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
   return (
     <div>
-      <h2>Team 1</h2>
-      <Pokedex pokemon={hand1} exp={exp1} />
-      <h2>Team 2</h2>
-      <Pokedex pokemon={hand2} exp={exp2} />
+      <Pokedex pokemon={hand1} exp={exp1} iswinner={exp1 > exp2} />
+      <Pokedex pokemon={hand2} exp={exp2} iswinner={exp2 > exp1} />
     </div>
   );
 }
