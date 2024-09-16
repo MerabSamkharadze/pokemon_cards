@@ -12,7 +12,7 @@
 }
 .Pokecard img:hover {
   transform: scale(1.25);
-  opacity: 0.76;
+  opacity: 0.76npm run build;
 }
 
 .Pokecard-data {
